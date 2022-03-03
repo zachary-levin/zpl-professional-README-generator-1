@@ -20,9 +20,6 @@ const promptQuestions = () => {
                 }
             }
         },
-
-// 2.5(?) TODO: Create a question asking user to enter a short description
-
         {
             type: 'input',
             name: 'motivation',
