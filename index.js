@@ -84,11 +84,29 @@ const promptQuestions = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'What license did you choose? Please select from below.',
+            choices: ['MIT', 'Apache', 'None']
         }
     ])
+    .then(promptData => {
+        console.log(promptData)
+        const mdstring = generateMarkdown(promptData)
+        console.log(mdstring)
+        // Call WriteToFile function and pass what it is looking for (fileName, data)
+        // data is mdstring
+        // fileName would be "README.md"
+        
+        //writeToFile('./output/README.md, mdstring)
+    });
 }
 
-promptQuestions();
+promptQuestions()
+    
+;
 
 // 7. TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
