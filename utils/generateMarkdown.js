@@ -40,6 +40,7 @@ function generateMarkdown(data) {
   - [Build Reason](<#build reason>)
   - [Credits](#credits)
   - [License](#license)
+  - [Features](#features)
   
   ## Motivation
   
@@ -52,12 +53,26 @@ function generateMarkdown(data) {
   
   To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
+  ``md
+  ![alt text](assets/images/screenshot.png)
+  ``
+  ## Credits
+
+  List your collaborators, if any, with links to their GitHub profiles.
+
+  If you used any third-party assets that require attention, list the creators with links to their primary web presense in this section.
+
+  If you followed tutorials, include links to those here as well.
+
   ## License
 
   ${renderLicenseSection(data.license)}
 
+  ---
 
-
+  ## Features
+  
+  If your project has a lot of features, list them here.
 `;
 }
 
