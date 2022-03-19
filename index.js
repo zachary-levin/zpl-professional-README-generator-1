@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
+const { resolve } = require('path');
 
 
 // 2. TODO: Create an array of questions for user input
@@ -101,7 +102,7 @@ const promptQuestions = () => {
         // data is mdstring
         // fileName would be "README.md"
         
-        //writeToFile('./output/README.md, mdstring)
+        writeToFile('./output/README.md', mdstring)
     });
 }
 
@@ -125,8 +126,13 @@ function writeToFile(README, mdstring) {
                 ok: true,
                 message: 'README created!'
             });
-        });
-    });
+            
+        })
+        ;
+    })
+    .then((message) => {
+        console.log(message.message)
+    })
  };
 
 // 8. TODO: Create a function to initialize app
