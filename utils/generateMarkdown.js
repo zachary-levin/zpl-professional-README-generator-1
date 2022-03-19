@@ -49,8 +49,6 @@ function generateMarkdown(data) {
   If your README is long, add a table of contents to make it easy for users to find what they need.
   
   - [Description](#description)
-  - [Motivation](#motivation)
-  - [BuildReason](<#build reason>)
   - [Credits](#credits)
   - [License](#license)
   - [Features](#features)
@@ -95,7 +93,7 @@ function generateMarkdown(data) {
   Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
   ## Questions?
-  If you have any questions, check out my [GitHub profile](https://github.com/${data.githubUsername}) at or email me at [zlevin706@gmail.com](${data.email})
+  If you have any questions, check out my [GitHub profile](https://github.com/${data.githubUsername}) at or email me at [zlevin706@gmail.com](mailto:${data.email})
 `;
 }
 
