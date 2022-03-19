@@ -1,11 +1,11 @@
-// 1. TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 const { resolve } = require('path');
 
 
-// 2. TODO: Create an array of questions for user input
+// Create an array of questions for user input
 
 const promptQuestions = () => {
     return inquirer.prompt([
@@ -38,7 +38,7 @@ const promptQuestions = () => {
         {
             type: 'input',
             name: 'buildReason',
-            message: 'Why did you build this project? (Note: the answer is not "Because it was a homework assignment.") (Required)',
+            message: 'Why did you build this project? (Required)',
             validate: buildReasonInput => {
                 if (buildReasonInput) {
                     return true;
@@ -76,7 +76,7 @@ const promptQuestions = () => {
         },
         {
             type: 'input',
-            name: 'standoutReason',
+            name: 'standout',
             message: 'What makes your project stand out? (Required)',
             validate: standoutReasonInput => {
                 if (standoutReasonInput) {
@@ -92,12 +92,36 @@ const promptQuestions = () => {
             name: 'license',
             message: 'What license did you choose? Please select from below.',
             choices: ['MIT', 'Apache', 'None']
+        },
+        {
+            type: 'input',
+            name: 'githubUsername',
+            message: 'Please enter your GitHub username. (Required)',
+            validate: (usernameInput) => {
+                if (usernameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username.')
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your email address here.',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address.')
+                }
+            }
         }
     ])
     .then(promptData => {
-        console.log(promptData)
+        //console.log(promptData)
         const mdstring = generateMarkdown(promptData)
-        console.log(mdstring)
+        //console.log(mdstring)
         // Call WriteToFile function and pass what it is looking for (fileName, data)
         // data is mdstring
         // fileName would be "README.md"
@@ -106,39 +130,16 @@ const promptQuestions = () => {
     });
 }
 
-promptQuestions()
-    
-;
+promptQuestions();
 
 // 7. TODO: Create a function to write README file
 function writeToFile(README, mdstring) {
-    return new Promise((resolve, reject) => {
-        fs.writeFile('./output/README.md', mdstring, err => {
-            // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
+        fs.writeFile(README, mdstring, err => {
             if (err) {
-                reject(err);
-                // return out of the function here to make sure the Promise doesn't accidentally execute the resolve() function as well
+                console.log('Issue with creating file!');
+                // return out of the function here if the files has issues being created
                 return;
             }
-
-            // if everything went well, resolve the Promise and send the successful data to the `.then()` method
-            resolve({
-                ok: true,
-                message: 'README created!'
-            });
-            
-        })
-        ;
-    })
-    .then((message) => {
-        console.log(message.message)
+            console.log('README created!')
     })
  };
-
-// 8. TODO: Create a function to initialize app
-function init() { }
-
-// 9. Function call to initialize app
-init();
-
-// Work on index.js file first, then do generateMarkdown.js file second.
