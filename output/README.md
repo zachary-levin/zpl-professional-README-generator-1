@@ -1,13 +1,13 @@
-# title, 
+# title 
   ## Description
 
   Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
   
   - What was my motivation? motivation
   - Why did I build this project? build reason
-  - What problem does it solve? problem solved
-  - What did I learn? learn reason
-  - What makes my project stand out? stand out
+  - What problem does it solve? solition
+  - What did I learn? i did
+  - What makes my project stand out? it does
   
   
   ## Table of Contents (Optional)
@@ -15,8 +15,6 @@
   If your README is long, add a table of contents to make it easy for users to find what they need.
   
   - [Description](#description)
-  - [Motivation](#motivation)
-  - [BuildReason](<#build reason>)
   - [Credits](#credits)
   - [License](#license)
   - [Features](#features)
@@ -44,7 +42,7 @@
 
   ## License
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)] (https://opensource.org/licenses/MIT)
+  No license.
 
   ---
 
@@ -60,5 +58,5 @@
 
   Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
-  ## Questions
-  If you have any questions, check out my [GitHub profile](https://github.com/zachary-levin) at or email me at [zlevin706@gmail.com](zlevin706@gmail.com)
+  ## Questions?
+  If you have any questions, check out my [GitHub profile](https://github.com/zachary-levin) at or email me at [zlevin706@gmail.com](mailto:zlevin706@gmail.com)
