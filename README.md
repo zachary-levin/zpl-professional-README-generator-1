@@ -24,6 +24,8 @@
 
   ![Application Preview](assets/images/application-screenshot.png)
   
+  ![Demonstration Video](https://youtu.be/5Pgi11IvSnk)
+  
   ## Credits
 
   List your collaborators, if any, with links to their GitHub profiles.
