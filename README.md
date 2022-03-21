@@ -1,35 +1,54 @@
 # zpl-professional-README-generator-1
 
-## User Story
+## Description
+  
+  - What was my motivation? I wanted to make a README generator that will allow me to save time in the future creating README's for future projects.
+  - Why did I build this project? I wanted to save time on making README files.
+  - What problem does it solve? It solves the problem of constantly making brand new README files for every project.
+  - What did I learn? I learned how to use Node.js and inquirer to generate README files.
+  - What makes my project stand out? It has all of the necessary pieces for a professional README file.
+  
+  
+  ## Table of Contents (Optional)
+  
+  - [Description](#description)
+  - [Credits](#credits)
+  - [License](#license)
+  - [Features](#features)
 
-```
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
-```
+  ## Installation
 
-## Acceptance Criteria
+  What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
 
-```
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+  ## Usage
 
-WHEN I enter my project title
-THEN this is displayed as the title of the README
+  ![Application Preview](assets/images/application-screenshot.png)
+  
+  ## Credits
 
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+  List your collaborators, if any, with links to their GitHub profiles.
 
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+  If you used any third-party assets that require attention, list the creators with links to their primary web presence in this section.
 
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+  If you followed tutorials, include links to those here as well.
 
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
+  ## License
 
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
-```
+  No license.
+
+  ---
+
+  ## Features
+  
+  If your project has a lot of features, list them here.
+
+  ## How to Contribute
+
+  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+
+  ## Tests
+
+  Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+
+  ## Questions?
+  If you have any questions, check out my [GitHub profile](https://github.com/zachary-levin) at or email me at [zlevin706@gmail.com](mailto:zlevin706@gmail.com)
