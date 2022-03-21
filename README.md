@@ -24,7 +24,7 @@
 
   ![Application Preview](assets/images/application-screenshot.png)
   
-  ![Demonstration Video](https://youtu.be/5Pgi11IvSnk)
+  [Demonstration Video](https://youtu.be/5Pgi11IvSnk)
   
   ## Credits
 
